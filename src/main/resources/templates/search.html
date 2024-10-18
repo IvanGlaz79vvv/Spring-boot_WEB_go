@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="https://www.thymeleaf.org"></html>
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <Link href="../static/css/search.css" th:href="@{css/search.css}" rel="stylesheet">
+</head>
+<body>
+<h1 th:text="hi + ' ' + ${name}"></h1>
+<div class="wrap">
+    <div class="search">
+        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+        <button type="submit" class="searchButton">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+</div>
+<!--<form class="search-form">
+    <div class="input-group">
+        <div class="input-group2"><label><input type="search" class="search-field"
+                                                placeholder="Find your perfect domain name" value=""></label><input
+                type="submit" class="rstore-domain-search-button search-submit btn btn-primary" value="Search"></div>
+    </div>-->
+</form>
+</body>
+</html>
