@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Hi home</title>
+    <Link href="../static/css/old/search2.css" th:href="@{css/search2.css}" rel="stylesheet">
 </head>
 <body>
-  <h1 th:text="hi + ' ' + ${name}"></h1>
+<h1 th:text="hi + ' ' + ${name}"></h1>
+<form action="" method="get">
+    <input name="name" placeholder="Искать здесь..." type="search">
+    <button type="submit">Поиск</button>
+</form>
 </body>
 </html>

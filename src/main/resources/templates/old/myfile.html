@@ -3,31 +3,27 @@
 <html xmlns:th="https://www.thymeleaf.org"></html>
 <head>
     <meta charset="UTF-8">
-    <title>Search</title>
-    <!--<Link href="../static/css/search2.css" th:href="@{css/search2.css}" rel="stylesheet">-->
+    <title>Myfile</title>
+<!--    <Link href="../static/css/myfile.css" th:href="@{css/myfile.css}" rel="stylesheet">-->
 </head>
 <body>
 <h1 th:text="hi + ' ' + ${name}"></h1>
 <div class="vertical-menu">
-
     <form method="post" role="search" class="google">
         <label for="search_google">Search for stuff</label>
-        <input name="search_GOOGLE" id="search_google" type="search" placeholder="Search Google..." autofocus required/>
+        <input name="search_google" id="search_google" type="search" placeholder="Search Google..." autofocus required />
         <button type="submit">Go</button>
     </form>
-
     <form method="post" role="search" class="yandex">
         <label for="search_yandex">Search for stuff</label>
-        <input name="search_yandex" id="search_yandex" type="search" placeholder="Search Yandex..." autofocus required/>
+        <input name="search_yandex" id="search_yandex" type="search" placeholder="Search Yandex..." autofocus required />
         <button type="submit">Ya</button>
     </form>
-
     <form method="post" role="search" class="duck">
         <label for="search_duck">Search for stuff</label>
-        <input name="search_duck" id="search_duck" type="search" placeholder="Search Duck..." autofocus required/>
+        <input name="search_duck" id="search_duck" type="search" placeholder="Search Duck..." autofocus required />
         <button type="submit">Duck</button>
     </form>
-
 </div>
 </body>
 </html>
